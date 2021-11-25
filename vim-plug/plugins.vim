@@ -20,13 +20,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'altercation/vim-colors-solarized'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
-" {{{ CTRLP
 Plug 'kien/ctrlp.vim'
-let g:ctrlp_map = '<c-p>'
-let g:ctrl_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'wa'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o,*.dSYM
-" }}}
 endif
 
 call plug#end()
