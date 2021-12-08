@@ -3,7 +3,6 @@ let g:mapleader = "\<Space>"
 filetype on
 filetype plugin on
 filetype indent on
-syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -37,7 +36,5 @@ set nowritebackup                       " This is recommended by coc
 set foldmethod=marker
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
-set clipboard=unnamedplus               " Copy paste between vim and everything else
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
