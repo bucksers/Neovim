@@ -38,4 +38,4 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
 set rtp+=/opt/homebrew/opt/fzf
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm; or run :source $MYVIMRC
