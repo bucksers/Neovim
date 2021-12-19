@@ -26,6 +26,11 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['p'] = [ ':FZF'  , 'FZF' ]
 let g:which_key_map['e'] = [ ':NERDTreeToggle'  , 'NERDTree' ]
+let g:which_key_map['t'] = [ ':FloatermToggle' , 'Terminal' ]
+let g:which_key_map['r'] = {
+      \ 'name' : 'code runners' ,
+      \ 't' : [':FloatermNew --autoclose=0 pytest -v'] ,
+      \ }
 
 
 " Register which key map

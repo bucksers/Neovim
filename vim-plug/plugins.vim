@@ -16,5 +16,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
