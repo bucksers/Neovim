@@ -23,16 +23,6 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-" Single mappings
-let g:which_key_map['p'] = [ ':FZF'  , 'FZF' ]
-let g:which_key_map['e'] = [ ':NERDTreeToggle'  , 'NERDTree' ]
-let g:which_key_map['t'] = [ ':FloatermToggle' , 'Terminal' ]
-let g:which_key_map['r'] = {
-      \ 'name' : 'code runners' ,
-      \ 't' : [':FloatermNew --autoclose=0 pytest -v'] ,
-      \ }
-
-
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
 

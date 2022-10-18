@@ -1,5 +1,4 @@
 set nocompatible
-let g:mapleader = "\<Space>"
 filetype on
 filetype plugin on
 filetype indent on
@@ -39,7 +38,3 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
 set rtp+=/opt/homebrew/opt/fzf
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm; or run :source $MYVIMRC
-autocmd FileType cpp nnoremap <F2> :FloatermNew --autoclose=0 g++ % -o %< && ./%<<CR>
-autocmd FileType cpp inoremap <F2> <ESC>:FloatermNew --autoclose=0 g++ % -o %< && ./%<<CR>
-autocmd FileType python nnoremap <F2> :FloatermNew --autoclose=0 python3 %<CR>
-autocmd FileType python inoremap <F2> <ESC>:FloatermNew --autoclose=0 python3 %<CR>

@@ -1,3 +1,6 @@
+nnoremap <Space> <NOP>
+let mapleader="\<Space>"
+
 " use ; as :
 nnoremap ; :
 
@@ -38,3 +41,4 @@ nnoremap <leader>D ggdG
 " Easier <TAB>
 nnoremap < <<
 nnoremap > >>
+
